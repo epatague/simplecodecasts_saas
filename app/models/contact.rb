@@ -1,4 +1,7 @@
 class Contact < ActiveRecord::Base
+  validates :name, presence: true
+  validates :email, presence: true
+  
   def change
     create_table :contacts do |t|
       t.string :name
