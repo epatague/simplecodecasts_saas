@@ -3,7 +3,7 @@ class Contact < ActiveRecord::Base
   validates :email, presence: true
   
   def change
-    create_table :contacts do |t|
+    create_table :contact do |t|
       t.string :name
       t.string :email
       t.text :comments
